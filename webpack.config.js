@@ -5,15 +5,23 @@ module.exports = {
   entry: {
     main: './src/index.js'
   },
+  resolveLoader: {
+    modules: ['node_modules', './loaders']
+  },
   module: {
     rules: [{
       test: /\.js/,
-      use: [{
-        loader: path.resolve(__dirname, './loaders/replaceLoader.js'),
-        options: {
-          name: 'Chan'
+      use: [
+        {
+          loader: 'replaceLoader'
+        },
+        {
+          loader: 'replaceLoaderAsync',
+          options: {
+            name: 'chan'
+          }
         }
-      }]
+      ]
     }]
   },
   output: {
