@@ -1,29 +1,14 @@
 const path = require('path');
+const CopyrightWebpackPlugin = require('./plugins/copyright-webpack-plugin');
 
 module.exports = {
   mode: 'development',
   entry: {
     main: './src/index.js'
   },
-  resolveLoader: {
-    modules: ['node_modules', './loaders']
-  },
-  module: {
-    rules: [{
-      test: /\.js/,
-      use: [
-        {
-          loader: 'replaceLoader'
-        },
-        {
-          loader: 'replaceLoaderAsync',
-          options: {
-            name: 'chan'
-          }
-        }
-      ]
-    }]
-  },
+  plugins: [
+    new CopyrightWebpackPlugin()
+  ],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js'
