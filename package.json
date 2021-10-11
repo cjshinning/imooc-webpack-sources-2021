@@ -1,0 +1,29 @@
+{
+  "name": "imooc-webpack-sources-2021",
+  "version": "1.0.0",
+  "description": "learning webpack",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/parser": "^7.15.8",
+    "loader-utils": "^2.0.0",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "devDependencies": {
+    "cli-highlight": "^2.1.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjshinning/imooc-webpack-sources-2021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjshinning/imooc-webpack-sources-2021/issues"
+  },
+  "homepage": "https://github.com/cjshinning/imooc-webpack-sources-2021#readme"
+}
