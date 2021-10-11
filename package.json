@@ -4,7 +4,10 @@
   "description": "learning webpack",
   "main": "index.js",
   "dependencies": {
+    "@babel/core": "^7.15.8",
     "@babel/parser": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/traverse": "^7.15.4",
     "loader-utils": "^2.0.0",
     "webpack": "^4.26.0",
     "webpack-cli": "^3.1.2"
